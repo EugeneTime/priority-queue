@@ -15,7 +15,7 @@ class MaxHeap {
 	}
 
 	detachRoot() {
-		
+		this.root = null;
 	}
 
 	restoreRootFromLastInsertedNode(detached) {
@@ -27,11 +27,12 @@ class MaxHeap {
 	}
 
 	isEmpty() {
-		
+		return this.heap.isEmpty();
 	}
 
 	clear() {
-		
+		this.root = null;
+		this.parentNodes = [];
 	}
 
 	insertNode(node) {

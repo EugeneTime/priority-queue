@@ -19,7 +19,7 @@ class PriorityQueue {
 	}
 
 	isEmpty() {
-		
+		return this.queue.isEmpty();
 	}
 }
 
